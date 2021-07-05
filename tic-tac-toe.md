@@ -1,0 +1,16 @@
+# Tic Tac Toe
+
+Какая история игры?
+
+Варианты реализации:
+1. обычная
+2. с компьютером (AI)
+3. по сети
+
+
+Ссылки:
+- https://stegur.github.io/pb-diploma/index.html
+- https://github.com/sinyakov/games/tree/master/tic-tac-toe реализация с отменой ходов...
+- [TTT with Min Max Algo](https://www.youtube.com/watch?v=P2TcQ3h0ipQ)
+- [React TTT](https://reactjs.org/tutorial/tutorial.html)
+- [TTT TDD](https://bespoyasov.ru/ttt-tdd/)
