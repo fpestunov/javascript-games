@@ -12,8 +12,12 @@ https://habr.com/ru/post/131117/ - описание интерфейса
 
 Ссылки:
 - https://xem.github.io/MiniSweeper/ - 497 байт
+- https://github.com/tony-luisi/minesweeper
+- https://github.com/muan/emoji-minesweeper - 💥
 - http://zloirock.ru/ - игра выполнена в фоне
 - https://www.101computing.net/minesweeper-in-javascript/
 - https://youtu.be/W0No1JDc6vE - Аня Кубова
 - https://codepen.io/bglaz/pen/dzrLJX - реализация с уровнями
+- https://github.com/ShizukuIchi/minesweeper - Windows XP Minesweepr in React + Hooks
+- https://github.com/OleksandrYehorov/minesweeper - Windows, React
 
