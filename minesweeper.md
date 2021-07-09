@@ -12,6 +12,7 @@ https://habr.com/ru/post/131117/ - описание интерфейса
 
 Ссылки:
 - https://xem.github.io/MiniSweeper/ - 497 байт
+- https://github.com/ig-ealbert/minesweeper-javascript - vanila JS + tests
 - https://github.com/tony-luisi/minesweeper
 - https://github.com/muan/emoji-minesweeper - 💥
 - http://zloirock.ru/ - игра выполнена в фоне
