@@ -8,7 +8,7 @@ https://en.wikipedia.org/wiki/Tetris
 
 Ссылки:
 - https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1 - Basic Tetris with explonation
-- https://thecode.media/tetris/ - перевод пред статьи
+- https://thecode.media/tetris/, https://thecode.media/tetris-2/ - перевод пред статьи
 - https://github.com/CodeExplainedRepo/Tetris-JavaScript + youtube
 - https://github.com/iCherya/Tetris
 - 
