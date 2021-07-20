@@ -7,3 +7,4 @@
 3. [Minesweeper](minesweeper.md)
 4. [Fifteen](fifteen.md)
 5. [Tetris](tetris.md)
+6. [Bomber](bomber.md)
