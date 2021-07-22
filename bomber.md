@@ -8,4 +8,4 @@ https://playminigames.ru/game/bomberman
 1. обычная
 
 Ссылки:
-- 
+- https://thecode.media/bomberman/
