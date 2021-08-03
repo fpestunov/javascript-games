@@ -8,3 +8,4 @@
 4. [Fifteen](fifteen.md)
 5. [Tetris](tetris.md)
 6. [Bomber](bomber.md)
+7. [Sokoban](sokoban.md)
