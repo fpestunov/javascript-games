@@ -9,3 +9,7 @@
 5. [Tetris](tetris.md)
 6. [Bomber](bomber.md)
 7. [Sokoban](sokoban.md)
+
+
+**Sources**
+- Coding With Adam // [YouTube](https://www.youtube.com/c/CodingWithAdam) // [GitHub](https://github.com/CodingWith-Adam?tab=repositories) - snake, ttt, pacman, tiles in games, etc

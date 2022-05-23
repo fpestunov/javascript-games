@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-family: Roboto, sans-serif;
+        font-size: 1em;
+        color: #777;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+
+      .board {
+        border: 10px solid #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <canvas width="400" height="400" class="board"></canvas>
+    </div>
+
+    <script>
+      const canvas = document.getElementsByClassName("board")[0];
+      const context = canvas.getContext("2d");
+
+      const grid = 20;
+      const food = [3, 4];
+      const snake = [
+        [10, 10],
+        [11, 10],
+        [12, 10],
+      ];
+      let [dx, dy] = [0, 0];
+
+      function drawFood() {
+        context.fillStyle = "red";
+        context.fillRect(food[0] * grid, food[1] * grid, grid, grid);
+      }
+
+      function drawSnake() {
+        context.fillStyle = "#333";
+        snake.forEach(([x, y]) =>
+          context.fillRect(x * grid, y * grid, grid - 1, grid - 1)
+        );
+      }
+
+      function drawGrid() {
+        for (var x = grid; x < 400; x += grid) {
+          context.moveTo(x, 0);
+          context.lineTo(x, 400);
+        }
+
+        for (var y = grid; y < 400; y += grid) {
+          context.moveTo(0, y);
+          context.lineTo(400, y);
+        }
+
+        context.strokeStyle = "#ccc";
+        context.stroke();
+      }
+
+      document.addEventListener("keydown", function (e) {
+        // left arrow key
+        if (e.which === 37) {
+          dx = -1;
+          dy = 0;
+          render();
+        }
+        // up arrow key
+        else if (e.which === 38) {
+          dy = -1;
+          dx = 0;
+          render();
+        }
+        // right arrow key
+        else if (e.which === 39) {
+          dx = 1;
+          dy = 0;
+          render();
+        }
+        // down arrow key
+        else if (e.which === 40) {
+          dy = 1;
+          dx = 0;
+          render();
+        }
+      });
+
+      function moveSnake() {
+        // snake[0] += dx;
+        // snake[1] += dy;
+        // if (snake[0] > 19) {
+        //   snake[0] = 0;
+        // }
+        // if (snake[0] < 0) {
+        //   snake[0] = 19;
+        // }
+        // if (snake[1] > 19) {
+        //   snake[1] = 0;
+        // }
+        // if (snake[1] < 0) {
+        //   snake[1] = 19;
+        // }
+      }
+
+      function checkFood() {
+        const isFoodEaten = snake[0] === food[0] && snake[1] === food[1];
+        if (isFoodEaten) {
+          food[0] = Math.floor(Math.random() * grid);
+          food[1] = Math.floor(Math.random() * grid);
+          console.log("yes, i got it");
+        }
+      }
+
+      function render() {
+        context.clearRect(0, 0, 400, 400);
+        moveSnake();
+        checkFood();
+        drawGrid();
+        drawFood();
+        drawSnake();
+      }
+
+      render();
+    </script>
+  </body>
+</html>
